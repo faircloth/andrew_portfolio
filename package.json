@@ -2,9 +2,13 @@
   "name": "browserify-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+   "engines": {
+    "node": "4.1.0",
+    "npm": "2.14.4"
   },
   "author": "",
   "license": "ISC",
