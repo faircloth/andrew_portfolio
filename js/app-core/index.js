@@ -5,12 +5,12 @@ import 'angular-ui-router';
 
 // import app modules
 import config from './config';
-// import HEROKU from './heroku.constant';
+import HEROKU from './heroku.constant';
 
 
 // instantiate angular app
 angular
   .module('app.core', ['ui.router'])
-  // .constant('HEROKU', HEROKU)
+  .constant('HEROKU', HEROKU)
   .config(config)
 ;

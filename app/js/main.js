@@ -32,6 +32,20 @@ exports['default'] = config;
 module.exports = exports['default'];
 
 },{}],2:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+exports['default'] = {
+  URL: 'https://safe-inlet-86596.herokuapp.com/api/',
+  CONFIG: {
+    headers: {}
+  }
+};
+module.exports = exports['default'];
+
+},{}],3:[function(require,module,exports){
 // angular modules
 'use strict';
 
@@ -51,14 +65,14 @@ var _config = require('./config');
 
 var _config2 = _interopRequireDefault(_config);
 
-// import HEROKU from './heroku.constant';
+var _herokuConstant = require('./heroku.constant');
+
+var _herokuConstant2 = _interopRequireDefault(_herokuConstant);
 
 // instantiate angular app
-_angular2['default'].module('app.core', ['ui.router'])
-// .constant('HEROKU', HEROKU)
-.config(_config2['default']);
+_angular2['default'].module('app.core', ['ui.router']).constant('HEROKU', _herokuConstant2['default']).config(_config2['default']);
 
-},{"./config":1,"angular":6,"angular-ui-router":4}],3:[function(require,module,exports){
+},{"./config":1,"./heroku.constant":2,"angular":7,"angular-ui-router":5}],4:[function(require,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -77,7 +91,7 @@ require('./app-core/index');
 
 _angular2['default'].module('app', ['app.core']);
 
-},{"./app-core/index":2,"angular":6,"jquery":7}],4:[function(require,module,exports){
+},{"./app-core/index":3,"angular":7,"jquery":8}],5:[function(require,module,exports){
 /**
  * State-based routing for AngularJS
  * @version v0.3.0
@@ -4653,7 +4667,7 @@ angular.module('ui.router.state')
   .filter('isState', $IsStateFilter)
   .filter('includedByState', $IncludedByStateFilter);
 })(window, window.angular);
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /**
  * @license AngularJS v1.5.6
  * (c) 2010-2016 Google, Inc. http://angularjs.org
@@ -35677,11 +35691,11 @@ $provide.value("$locale", {
 })(window);
 
 !window.angular.$$csp().noInlineStyle && window.angular.element(document.head).prepend('<style type="text/css">@charset "UTF-8";[ng\\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>');
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 require('./angular');
 module.exports = angular;
 
-},{"./angular":5}],7:[function(require,module,exports){
+},{"./angular":6}],8:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v2.2.4
  * http://jquery.com/
@@ -45497,7 +45511,7 @@ if ( !noGlobal ) {
 return jQuery;
 }));
 
-},{}]},{},[3])
+},{}]},{},[4])
 
 
 //# sourceMappingURL=main.js.map
