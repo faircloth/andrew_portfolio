@@ -19,7 +19,7 @@ router.get('/google', function() {
   });
 
   console.log('url:', url);
-  
+
   // Get the code from the url
 
   // oauth2Client.getToken(code, function(err, tokens) {
@@ -30,6 +30,13 @@ router.get('/google', function() {
   // });
 
   // google.options({ auth: oauth2Client }); // set auth as a global default
+
+});
+
+
+router.get('/auth', function(req, res) {
+  var code = req.body.code;
+  console.log(code);
 
 });
 
