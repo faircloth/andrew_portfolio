@@ -1,7 +1,9 @@
-var google = require('googleapis');
+var google  = require('googleapis');
+var express = require('express');
+var router  = express.Router();
 
 // Search for tweets since June 1
-router.get('/google', function(req, res) {
+router.get('/google', function() {
   
   var OAuth2 = google.auth.OAuth2;
 
