@@ -13,21 +13,13 @@ router.get('/google', function() {
 
   var oauth2Client = new OAuth2(client_id, client_secret, redirect_url);
 
-  // generate a url that asks permissions for Google+ and Google Calendar scopes
-  var scopes = [
-    'https://www.googleapis.com/auth/plus.me',
-    'https://www.googleapis.com/auth/calendar'
-  ];
-
   var url = oauth2Client.generateAuthUrl({
     access_type: 'online', // 'online' (default) or 'offline' (gets refresh_token)
-    scope: scopes // If you only need one scope you can pass it as string
+    scope: 'https://www.googleapis.com/auth/calendar' // If you only need one scope you can pass it as string
   });
 
-  
-  console.log(oauth2Client);
   console.log('url:', url);
-
+  
   // Get the code from the url
 
   // oauth2Client.getToken(code, function(err, tokens) {
