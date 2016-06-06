@@ -1,4 +1,7 @@
-var Twit = require('twit')
+// node runs file with strict interpretation
+'use strict';
+
+var Twit = require('twit');
 
 var T = new Twit({
   consumer_key:         process.env.TWITTER_CONSUMER_KEY,
@@ -6,7 +9,7 @@ var T = new Twit({
   access_token:         process.env.TWITTER_ACCESS_TOKEN,
   access_token_secret:  process.env.TWITTER_ACCESS_TOKEN_SECRET,
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
-})
+});
 
 //
 //  search twitter for all tweets containing the word 'banana' since July 11, 2011
