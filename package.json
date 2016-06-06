@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-   "engines": {
+  "engines": {
     "node": "4.1.0",
     "npm": "2.14.4"
   },
@@ -51,6 +51,7 @@
     "mongoose": "^4.4.19",
     "normalize.css": "^3.0.3",
     "request": "^2.72.0",
+    "twit": "^2.2.4",
     "underscore": "^1.8.3"
   }
 }

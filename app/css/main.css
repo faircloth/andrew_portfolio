@@ -5817,21 +5817,28 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.navbar-fixed-top {
+.nav-section {
+  display: inline-block;
+  height: 900px;
+  width: 25%;
+  vertical-align: top;
+  padding: 20px;
   background-color: #256DAA;
-  display: block;
-  border-bottom: 1px solid #3B3D3F; }
-  .navbar-fixed-top ul {
+  color: white; }
+  .nav-section img.profile-pic {
     display: block;
-    width: 90%;
-    margin: 2px auto;
-    list-style-type: none;
-    padding: 10px; }
-    .navbar-fixed-top ul li {
-      display: inline-block; }
-      .navbar-fixed-top ul li a {
-        font-size: 1.0em;
-        color: white; }
+    width: 80%;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    border: 1px solid white; }
+  .nav-section .nav-pills {
+    color: white; }
+    .nav-section .nav-pills a {
+      color: white;
+      font-size: 1.3em; }
+      .nav-section .nav-pills a:hover {
+        color: #256DAA; }
 
 .content {
   margin: 60px auto;
@@ -5839,5 +5846,10 @@ button.close {
 
 blockquote {
   border-color: darkgrey; }
+
+.content {
+  display: inline-block;
+  width: 70%;
+  margin: 5px; }
 
 /*# sourceMappingURL=main.css.map */

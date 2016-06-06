@@ -20,6 +20,28 @@ let config = function($urlRouterProvider, $stateProvider) {
         }
       }
     })
+    .state('root.about', {
+      url: '/about',
+      views: {
+        navbar: {
+          templateUrl: 'templates/app-layout/navbar.tpl.html'
+        },
+        content: {
+          templateUrl: 'templates/home.tpl.html'
+        }
+      }
+    })
+    .state('root.myapps', {
+      url: '/my-apps',
+      views: {
+        navbar: {
+          templateUrl: 'templates/app-layout/navbar.tpl.html'
+        },
+        content: {
+          templateUrl: 'templates/home.tpl.html'
+        }
+      }
+    })
     ;
 
 };

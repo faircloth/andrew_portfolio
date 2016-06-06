@@ -23,6 +23,26 @@ var config = function config($urlRouterProvider, $stateProvider) {
         templateUrl: 'templates/home.tpl.html'
       }
     }
+  }).state('root.about', {
+    url: '/about',
+    views: {
+      navbar: {
+        templateUrl: 'templates/app-layout/navbar.tpl.html'
+      },
+      content: {
+        templateUrl: 'templates/home.tpl.html'
+      }
+    }
+  }).state('root.myapps', {
+    url: '/my-apps',
+    views: {
+      navbar: {
+        templateUrl: 'templates/app-layout/navbar.tpl.html'
+      },
+      content: {
+        templateUrl: 'templates/home.tpl.html'
+      }
+    }
   });
 };
 
@@ -38,7 +58,7 @@ Object.defineProperty(exports, '__esModule', {
   value: true
 });
 exports['default'] = {
-  URL: 'https://safe-inlet-86596.herokuapp.com/api/',
+  URL: 'https://andrew-portfolio.herokuapp.com/api/',
   CONFIG: {
     headers: {}
   }
