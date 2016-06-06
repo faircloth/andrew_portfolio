@@ -22,7 +22,6 @@ app.use( (req, res, next) => {
 // this is serving the entire app folder at the home route
 app.use('/', express.static('app'));
 
-
 // namespacing for api routes
 app.use('/api', router);
 
