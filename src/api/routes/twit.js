@@ -61,3 +61,7 @@ router.post('/twit', function(req, res) {
 // stream.on('tweet', function (tweet) {
 //   console.log(tweet)
 // })
+
+
+
+module.exports = router;
