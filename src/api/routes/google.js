@@ -24,6 +24,8 @@ router.get('/google', function() {
     scope: scopes // If you only need one scope you can pass it as string
   });
 
+  
+  console.log(oauth2Client);
   console.log('url:', url);
 
   // Get the code from the url
@@ -35,7 +37,7 @@ router.get('/google', function() {
   //   }
   // });
 
-  google.options({ auth: oauth2Client }); // set auth as a global default
+  // google.options({ auth: oauth2Client }); // set auth as a global default
 
 });
 
