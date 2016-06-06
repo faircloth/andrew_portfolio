@@ -7,7 +7,7 @@ var router = express.Router();
 // route imports
 router.use(require('./routes/note'));
 router.use(require('./routes/twit'));
-// router.use(require('./routes/scrape'));
+router.use(require('./routes/google'));
 
 // export the router
 module.exports = router;

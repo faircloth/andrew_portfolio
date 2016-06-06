@@ -42,6 +42,17 @@ let config = function($urlRouterProvider, $stateProvider) {
         }
       }
     })
+    .state('root.myapps', {
+      url: '/auth',
+      views: {
+        navbar: {
+          templateUrl: 'templates/app-layout/navbar.tpl.html'
+        },
+        content: {
+          templateUrl: 'templates/home.tpl.html'
+        }
+      }
+    })
     ;
 
 };
