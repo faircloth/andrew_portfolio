@@ -33,17 +33,17 @@ var config = function config($urlRouterProvider, $stateProvider) {
         templateUrl: 'templates/home.tpl.html'
       }
     }
-  }).state('root.myapps', {
-    url: '/my-apps',
+  }).state('root.apps', {
+    url: '/apps',
     views: {
       navbar: {
         templateUrl: 'templates/app-layout/navbar.tpl.html'
       },
       content: {
-        templateUrl: 'templates/home.tpl.html'
+        templateUrl: 'templates/app-views/myapps.tpl.html'
       }
     }
-  }).state('root.myapps', {
+  }).state('root.auth', {
     url: '/auth',
     views: {
       navbar: {

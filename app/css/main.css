@@ -5840,9 +5840,18 @@ button.close {
       .nav-section .nav-pills a:hover {
         color: #256DAA; }
 
+div.col-md-4 {
+  padding: 10px; }
+  div.col-md-4 div.app-grid {
+    background-color: lightgrey;
+    color: blue;
+    min-height: 200px;
+    margin: 3px;
+    padding: 10px; }
+
 .content {
   margin: 60px auto;
-  padding: 30px; }
+  padding: 20px; }
 
 blockquote {
   border-color: darkgrey; }

@@ -4,13 +4,14 @@
 @import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
 @import './navbar.scss';
+@import './apps.scss';
 
 body {
 }
 
 .content {
   margin: 60px auto;
-  padding: 30px;
+  padding: 20px;
 }
 
 blockquote {
