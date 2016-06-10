@@ -5840,14 +5840,25 @@ button.close {
       .nav-section .nav-pills a:hover {
         color: #256DAA; }
 
-div.col-md-4 {
-  padding: 10px; }
-  div.col-md-4 div.app-grid {
-    background-color: lightgrey;
-    color: blue;
-    min-height: 200px;
-    margin: 3px;
-    padding: 10px; }
+div.col-md-6 {
+  padding: 15px;
+  min-height: 300px; }
+  div.col-md-6 div.app-grid {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 10px;
+    min-height: 300px; }
+    div.col-md-6 div.app-grid h3 {
+      text-align: center; }
+    div.col-md-6 div.app-grid img {
+      display: block;
+      margin: 20px auto; }
+    div.col-md-6 div.app-grid p {
+      font-size: 1.4em;
+      display: block;
+      margin: 10px auto;
+      width: 80%;
+      text-align: center; }
 
 .content {
   margin: 60px auto;
@@ -5860,5 +5871,10 @@ blockquote {
   display: inline-block;
   width: 70%;
   margin: 5px; }
+
+h2.page-title {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #256DAA;
+  border-radius: 2px; }
 
 /*# sourceMappingURL=main.css.map */

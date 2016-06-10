@@ -30,7 +30,17 @@ var config = function config($urlRouterProvider, $stateProvider) {
         templateUrl: 'templates/app-layout/navbar.tpl.html'
       },
       content: {
-        templateUrl: 'templates/home.tpl.html'
+        templateUrl: 'templates/app-views/about.tpl.html'
+      }
+    }
+  }).state('root.resume', {
+    url: '/resume',
+    views: {
+      navbar: {
+        templateUrl: 'templates/app-layout/navbar.tpl.html'
+      },
+      content: {
+        templateUrl: 'templates/app-views/resume.tpl.html'
       }
     }
   }).state('root.apps', {
@@ -51,6 +61,16 @@ var config = function config($urlRouterProvider, $stateProvider) {
       },
       content: {
         templateUrl: 'templates/home.tpl.html'
+      }
+    }
+  }).state('root.twitter', {
+    url: '/twitter',
+    views: {
+      navbar: {
+        templateUrl: 'templates/app-layout/navbar.tpl.html'
+      },
+      content: {
+        templateUrl: 'templates/app-views/twitter.tpl.html'
       }
     }
   });

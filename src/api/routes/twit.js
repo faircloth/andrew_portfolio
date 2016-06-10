@@ -18,7 +18,7 @@ router.post('/twit', function(req, res) {
   
   var search = req.body.search;
 
-  T.get('search/tweets', { q: search + ' since:2016-06-01', count: 100 }, function(err, data, response) {
+  T.get('search/tweets', { q: search + ' since:2016-06-01', count: 2 }, function(err, data, response) {
     console.log(data);
     res.json( {data: data});
   });
